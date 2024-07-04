@@ -1,7 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+html {
+  scroll-padding-top: 150px;
+  scroll-behavior: smooth;
+}
 @layer utilities {
   .button-hero {
     background: linear-gradient(

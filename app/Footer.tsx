@@ -1,14 +1,17 @@
 import { Separator } from "@/components/ui/separator";
-import { Facebook, Instagram, Linkedin } from "lucide-react";
+import { Instagram, Linkedin, Twitter } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
 function Footer() {
   return (
     <div className="mb-24 flex w-full flex-col gap-8 sm:gap-16">
-      <h2 className="text-[27px] font-bold text-[#ff7700] lg:text-[36px] xl:text-[47px]">
+      <Link
+        href="/"
+        className="cursor-pointer text-[27px] font-bold text-[#ff7700] lg:text-[36px] xl:text-[47px]"
+      >
         لينغو ليرن
-      </h2>
+      </Link>
       <div className="flex flex-wrap items-center  justify-between gap-12">
         <Separator className="flex max-w-[1000px] rounded-full bg-[#FFDAC2]" />
         <div className="flex items-center   justify-between gap-8">
@@ -22,13 +25,13 @@ function Footer() {
       </div>
       <div className="flex flex-wrap items-center justify-between gap-4">
         <div className="flex  justify-between gap-4 text-[#FF9D5D]">
-          <Link href="">
-            <Facebook />
+          <Link href="https://x.com/shadi_m02">
+            <Twitter />
           </Link>
-          <Link href="/">
+          <Link href="https://www.instagram.com/shadi_m02">
             <Instagram />
           </Link>
-          <Link href="/">
+          <Link href="https://www.linkedin.com/in/shadi-al-milhem">
             <Linkedin />
           </Link>
         </div>

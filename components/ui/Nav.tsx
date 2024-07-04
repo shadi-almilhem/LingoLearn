@@ -27,7 +27,7 @@ const Nav = () => {
           <Link
             href={item.href}
             key={index}
-            className={`${item.className} text-small lg:text-medium px-2 text-[#5D2B0B] hover:font-medium hover:text-[#864115] lg:px-4`}
+            className={`${item.className} text-small lg:text-medium  mx-2 text-[#5D2B0B] hover:font-medium hover:text-[#864115] lg:px-4`}
           >
             {item.text}
           </Link>
