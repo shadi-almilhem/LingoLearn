@@ -15,12 +15,12 @@ function Footer() {
       <div className="flex flex-wrap items-center  justify-between gap-12">
         <Separator className="flex max-w-[1000px] rounded-full bg-[#FFDAC2]" />
         <div className="flex items-center   justify-between gap-8">
-          <span className="text-center text-base text-[#FF8435]">
+          <Link href="/" className="text-center text-base text-[#FF8435]">
             الشروط و الأحكام
-          </span>
-          <span className="text-center text-base text-[#FF8435]">
+          </Link>
+          <Link href="/" className="text-center text-base text-[#FF8435]">
             سياسة الخصوصية
-          </span>
+          </Link>
         </div>
       </div>
       <div className="flex flex-wrap items-center justify-between gap-4">
@@ -35,6 +35,15 @@ function Footer() {
             <Linkedin />
           </Link>
         </div>
+        <span className="text-[#FF9D5D]">
+          صنع بـ🧡 بواسطة{" "}
+          <Link
+            className="font-semibold text-[#FF8435]"
+            href="https://shadialmilhem.com"
+          >
+            Shadi Al Milhem
+          </Link>
+        </span>
         <span className="text-[#FF9D5D]">
           ©2024 لينفو ليرن. جميع الحقوق محفوظة.
         </span>
