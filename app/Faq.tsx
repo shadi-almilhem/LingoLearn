@@ -58,7 +58,7 @@ function Faq() {
               key={index}
               value={`item-${index + 1}`}
             >
-              <AccordionTrigger className="text-[21px] font-normal  text-[#864115]	hover:no-underline">
+              <AccordionTrigger className="text-start text-[21px] font-normal  text-[#864115]	hover:no-underline">
                 {faq.question}
               </AccordionTrigger>
               <AccordionContent className=" text-lg font-normal text-[#AE5820]">

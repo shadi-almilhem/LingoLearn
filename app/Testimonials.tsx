@@ -57,7 +57,7 @@ function Testimonials() {
   return (
     <section
       id="testimonials"
-      className="relative flex w-full flex-col items-center justify-center gap-16 rounded-3xl border-2 border-[#003766] bg-[hsl(24,100%,98%)] py-16 shadow-[0px_10px_20px_0px_rgba(0,0,0,0.10)]"
+      className="relative flex w-full flex-col items-center justify-center gap-16 rounded-3xl border-2 border-[#003766] bg-[hsl(24,100%,98%)] px-6 py-16 shadow-[0px_10px_20px_0px_rgba(0,0,0,0.10)]"
     >
       <SectionHeading
         spanText="آراء المتعلمين"

@@ -7,7 +7,7 @@ import Testimonials from "./Testimonials";
 
 export default function Home() {
   return (
-    <main className="relative flex min-h-screen flex-col items-center gap-40 px-2 sm:px-4 md:px-16 lg:px-36 ">
+    <main className="relative flex min-h-screen flex-col items-center  gap-24 px-2 sm:px-4 md:gap-32 md:px-16 lg:gap-40 lg:px-36 ">
       <Hero />
 
       <div className="bg-grid absolute h-screen w-full"></div>
