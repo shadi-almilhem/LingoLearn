@@ -27,7 +27,7 @@ function Services() {
     >
       <SectionHeading
         spanText="ماذا نقدم لك"
-        h2Text={`نقدم دروساً مبتكرة ومحادثات حية لتعلم اللغات احصل على مهارات
+        h2Text={`نقدم دروساً مبتكرة ومحادثات حية لتعلم اللغات، احصل على مهارات
         لغوية تفتح لك أبوابًا جديدة`}
       />
       <div className="flex w-full flex-col items-center justify-evenly gap-8 sm:gap-6 md:flex-row md:gap-6">
