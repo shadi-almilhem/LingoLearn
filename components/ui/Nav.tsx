@@ -15,7 +15,7 @@ const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed z-50  flex h-24 w-full items-center justify-between text-nowrap bg-white/70 px-2 backdrop-blur-sm sm:px-4 md:px-16 lg:px-36">
+    <nav className="fixed z-50  flex h-24 w-full items-center justify-between text-nowrap bg-white px-2 backdrop-blur-sm sm:px-4 md:bg-white/70 md:px-16 lg:px-36">
       {/* Logo place */}
       <h2 className="text-[27px] font-bold text-[#ff7700] lg:text-[36px] xl:text-[47px]">
         لينغو ليرن
@@ -53,7 +53,7 @@ const Nav = () => {
 
       {/* Mobile Nav */}
       {menuOpen && (
-        <div className="absolute left-0 top-16 z-50 flex w-full flex-col items-start gap-2 border-b-2 border-orange-200 bg-gradient-to-b  from-white to-orange-50 p-4 shadow-sm md:hidden">
+        <div className="absolute left-0 top-24 z-50 flex w-full flex-col items-start gap-2 border-b-2 border-orange-200 bg-white  p-4   shadow-lg  md:hidden">
           {navItems.map((item, index) => (
             <Link
               href={item.href}

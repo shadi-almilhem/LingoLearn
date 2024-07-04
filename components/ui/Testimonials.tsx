@@ -47,7 +47,7 @@ function Testimonials() {
             alt="person image"
             height={200}
             width={200}
-            className="-mx-2 h-10 w-10 rounded-full border-4 border-white object-cover md:h-12 md:w-12 lg:-mx-3 lg:h-14 lg:w-14"
+            className="-mx-2 h-10 w-10 rounded-full border-2 border-white object-cover md:h-12 md:w-12 lg:-mx-3 lg:h-14 lg:w-14 lg:border-4"
             src={person.image}
           />
         ))}
