@@ -11,7 +11,7 @@ function HeroImageAndText() {
             height={500}
             src="/LearningPerson.webp"
             alt="Person learning with books"
-            loading="lazy"
+            priority={true}
             className="rounded-[45px_0px] border border-transparent md:rounded-[90px_0px]"
           />
           <div className="absolute inset-0 rounded-[45px_0px] bg-[#FFF3EB] opacity-10 md:rounded-[90px_0px]"></div>
