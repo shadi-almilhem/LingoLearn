@@ -1,7 +1,7 @@
 "use client";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Image from "next/image";
-import  { useRef } from "react";
+import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
 const peopleTestimonials = [
@@ -63,7 +63,7 @@ const fadeInUp = {
 const stagger = {
   visible: {
     transition: {
-      staggerChildren: 0.5,
+      staggerChildren: 0.6,
       delayChildren: 0.6,
     },
   },

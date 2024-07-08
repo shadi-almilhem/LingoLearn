@@ -34,7 +34,26 @@ const FaqDetails = [
       "نوفر عدة طرق للدفع تشمل البطاقات الائتمانية، الباي بال، والتحويلات المصرفية. يمكنك اختيار الطريقة التي تناسبك أثناء عملية التسجيل.",
   },
 ];
+const fadeInUp = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: "easeOut",
+    },
+  },
+};
 
+const stagger = {
+  visible: {
+    transition: {
+      staggerChildren: 0.6,
+      delayChildren: 0.6,
+    },
+  },
+};
 function Faq() {
   return (
     <section

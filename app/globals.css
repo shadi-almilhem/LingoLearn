@@ -41,6 +41,30 @@ html {
     filter: brightness(110%);
     background-position: top;
   }
+  .image-moving-animation1 {
+    animation: moveUpDown1 3s infinite alternate;
+  }
+  @keyframes moveUpDown1 {
+    0%,
+    100% {
+      transform: translateY(-20px);
+    }
+    50% {
+      transform: translateY(-30px); /* Adjust the distance as needed */
+    }
+  }
+  .image-moving-animation2 {
+    animation: moveUpDown2 4s infinite alternate;
+  }
+  @keyframes moveUpDown2 {
+    0%,
+    100% {
+      transform: translateY(-20px);
+    }
+    50% {
+      transform: translateY(10px); /* Adjust the distance as needed */
+    }
+  }
 }
 @layer base {
   :root {

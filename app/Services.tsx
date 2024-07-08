@@ -2,7 +2,7 @@
 import SectionHeading from "@/components/ui/SectionHeading";
 import { BookUser, GraduationCap, Languages } from "lucide-react";
 import { useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import { delay, motion, useInView } from "framer-motion";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 20 },
@@ -22,7 +22,7 @@ const zoomIn = {
     scale: 1,
     opacity: 1,
     transition: {
-      duration: 0.6,
+      duration: 0.4,
       ease: "easeOut",
     },
   },
@@ -32,7 +32,7 @@ const stagger = {
   visible: {
     transition: {
       staggerChildren: 0.5,
-      delayChildren: 0.3,
+      delayChildren: 0.8,
     },
   },
 };
