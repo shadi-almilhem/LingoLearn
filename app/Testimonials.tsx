@@ -1,6 +1,9 @@
+"use client";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Image from "next/image";
-import React from "react";
+import React, { useRef } from "react";
+import { motion, useInView } from "framer-motion";
+
 const peopleTestimonials = [
   {
     id: 1,
@@ -45,9 +48,30 @@ const peopleTestimonials = [
     text: "“الموقع يوفر الكثير من الموارد المفيدة والمحتوى الجيد. ساعدني على تحسين نطقي وفهمي للغة بشكل كبير.”",
   },
 ];
+const fadeInUp = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: "easeOut",
+    },
+  },
+};
+
+const stagger = {
+  visible: {
+    transition: {
+      staggerChildren: 0.5,
+      delayChildren: 0.6,
+    },
+  },
+};
 function Testimonials() {
   const chunkSize = 3; // Number of testimonials per row
-
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "0px 0px -300px 0px" });
   // Split testimonials into chunks
   const testimonialChunks = [];
   for (let i = 0; i < peopleTestimonials.length; i += chunkSize) {
@@ -57,25 +81,36 @@ function Testimonials() {
   return (
     <section
       id="testimonials"
+      ref={ref}
       className="relative flex w-full flex-col items-center justify-center gap-16 rounded-3xl border-2 border-[#003766] bg-[hsl(211,100%,98%)] px-6 py-16 shadow-[0px_10px_20px_0px_rgba(0,0,0,0.10)] md:px-10 "
     >
       <SectionHeading
         spanText="آراء المتعلمين"
         h2Text="مئات المستخدمين شاركوا قصصهم و كيف غيرت دورات اللغة حياتهم و حسنتها"
       />
-      <div className="flex w-full flex-col gap-8  md:gap-6">
+      <motion.div
+        initial="hidden"
+        animate={isInView ? "visible" : "hidden"}
+        variants={stagger}
+        className="flex w-full flex-col gap-8  md:gap-6"
+      >
         {testimonialChunks.map((chunk, rowIndex) => (
-          <div
+          <motion.div
             key={rowIndex}
-            className="flex  flex-col items-center justify-evenly gap-8 sm:gap-6 md:flex-row md:gap-6"
+            variants={fadeInUp}
+            className="flex flex-col items-center justify-evenly gap-8 sm:gap-6 md:flex-row md:gap-6"
           >
             {chunk.map((testimonial, colIndex) => (
-              <div key={colIndex} className="flex w-full flex-col   md:w-fit">
-                <div className="flex   min-h-[300px] min-w-full flex-col  items-center justify-between gap-4 self-center  rounded-3xl border-2 border-[#CFE5FD]  bg-gradient-to-b from-[#E6F2FF] to-[#CFE5FD] px-8 py-12 sm:items-start sm:px-4 sm:py-8  md:min-w-min md:px-6 md:py-10 ">
+              <motion.div
+                key={colIndex}
+                variants={fadeInUp}
+                className="flex w-full flex-col md:w-fit"
+              >
+                <div className="flex min-h-[300px] min-w-full flex-col items-center justify-between gap-4 self-center rounded-3xl border-2 border-[#CFE5FD] bg-gradient-to-b from-[#E6F2FF] to-[#CFE5FD] px-8 py-12 sm:items-start sm:px-4 sm:py-8 md:min-w-min md:px-6 md:py-10">
                   {/* Star icons */}
                   <div className="flex items-start">
                     {Array.from({ length: 5 }).map((_, index) => (
-                      <span key={index} className="  text-yellow-500">
+                      <span key={index} className="text-yellow-500">
                         <Image
                           alt="star icon"
                           src="/star.svg"
@@ -94,18 +129,18 @@ function Testimonials() {
                       height={200}
                       width={200}
                       loading="lazy"
-                      className="  h-14 w-14 rounded-full border-4   border-white object-cover"
+                      className="h-14 w-14 rounded-full border-4 border-white object-cover"
                       src={testimonial.image}
                     />
                     <span>{testimonial.name}</span>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         ))}
-      </div>
-      <div className="absolute inset-x-0 bottom-0 -z-10 -mx-2 h-[80vh] [background:linear-gradient(180deg,rgba(255,243,235,0.00)_-2%,#E6F2FF_50%,rgba(255,243,235,0.00)_100%)] sm:-mx-4 md:-mx-16 lg:-mx-36 "></div>
+      </motion.div>
+      <div className="absolute inset-x-0 bottom-0 -z-10 -mx-2 h-[80vh] [background:linear-gradient(180deg,rgba(255,243,235,0.00)_-2%,#E6F2FF_50%,rgba(255,243,235,0.00)_100%)] sm:-mx-4 md:-mx-16 lg:-mx-36"></div>
     </section>
   );
 }
