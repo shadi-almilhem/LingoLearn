@@ -32,7 +32,7 @@ function Hero() {
         </div>
         <HeroImageAndText />
       </div>
-      <div className="absolute inset-x-0 bottom-0 -z-10 -mx-2 h-[80vh] bg-gradient-to-b  from-transparent from-5% to-[#FF851B] to-95% sm:-mx-4 md:-mx-16 lg:-mx-36 "></div>
+      <div className="absolute inset-x-0 bottom-0 -z-10 -mx-2 h-[80vh] bg-gradient-to-b  from-transparent from-5% to-[#006FE6] to-95% sm:-mx-4 md:-mx-16 lg:-mx-36 "></div>
     </section>
   );
 }

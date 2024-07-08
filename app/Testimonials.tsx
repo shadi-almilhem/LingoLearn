@@ -57,7 +57,7 @@ function Testimonials() {
   return (
     <section
       id="testimonials"
-      className="relative flex w-full flex-col items-center justify-center gap-16 rounded-3xl border-2 border-[#003766] bg-[hsl(24,100%,98%)] px-6 py-16 shadow-[0px_10px_20px_0px_rgba(0,0,0,0.10)] md:px-10 "
+      className="relative flex w-full flex-col items-center justify-center gap-16 rounded-3xl border-2 border-[#003766] bg-[hsl(211,100%,98%)] px-6 py-16 shadow-[0px_10px_20px_0px_rgba(0,0,0,0.10)] md:px-10 "
     >
       <SectionHeading
         spanText="آراء المتعلمين"
@@ -71,7 +71,7 @@ function Testimonials() {
           >
             {chunk.map((testimonial, colIndex) => (
               <div key={colIndex} className="flex w-full flex-col   md:w-fit">
-                <div className="flex   min-h-[300px] min-w-full flex-col  items-center justify-between gap-4 self-center  rounded-3xl border-2 border-[#FFDAC2]  bg-gradient-to-b from-[#FFF3EB] to-[hsl(24,100%,93%)] px-8 py-12 sm:items-start sm:px-4 sm:py-8  md:min-w-min md:px-6 md:py-10 ">
+                <div className="flex   min-h-[300px] min-w-full flex-col  items-center justify-between gap-4 self-center  rounded-3xl border-2 border-[#CFE5FD]  bg-gradient-to-b from-[#E6F2FF] to-[#CFE5FD] px-8 py-12 sm:items-start sm:px-4 sm:py-8  md:min-w-min md:px-6 md:py-10 ">
                   {/* Star icons */}
                   <div className="flex items-start">
                     {Array.from({ length: 5 }).map((_, index) => (
@@ -104,7 +104,7 @@ function Testimonials() {
           </div>
         ))}
       </div>
-      <div className="absolute inset-x-0 bottom-0 -z-10 -mx-2 h-[80vh] [background:linear-gradient(180deg,rgba(255,243,235,0.00)_-2%,#FFE6D7_50%,rgba(255,243,235,0.00)_100%)] sm:-mx-4 md:-mx-16 lg:-mx-36 "></div>
+      <div className="absolute inset-x-0 bottom-0 -z-10 -mx-2 h-[80vh] [background:linear-gradient(180deg,rgba(255,243,235,0.00)_-2%,#E6F2FF_50%,rgba(255,243,235,0.00)_100%)] sm:-mx-4 md:-mx-16 lg:-mx-36 "></div>
     </section>
   );
 }

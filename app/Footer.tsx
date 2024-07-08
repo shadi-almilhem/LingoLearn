@@ -8,29 +8,23 @@ function Footer() {
     <div className="mb-24 flex w-full flex-col gap-8 sm:gap-16">
       <Link
         href="/"
-        className="cursor-pointer text-[27px] font-bold text-[#ff7700] lg:text-[36px] xl:text-[47px]"
+        className="cursor-pointer text-[27px] font-bold text-[#006FE6] lg:text-[36px] xl:text-[47px]"
       >
         لينغو ليرن
       </Link>
       <div className="flex flex-wrap items-center  justify-between gap-12">
-        <Separator className="flex max-w-[1000px] rounded-full bg-[#FFDAC2]" />
+        <Separator className="flex max-w-[1000px] rounded-full bg-[#A1CBF8]" />
         <div className="flex items-center   justify-between gap-8">
-          <Link
-            href="/"
-            className="text-center text-base text-[hsl(28,100%,45%)]"
-          >
+          <Link href="/" className="text-center text-base text-[#002C5C]">
             الشروط و الأحكام
           </Link>
-          <Link
-            href="/"
-            className="text-center text-base text-[hsl(28,100%,45%)]"
-          >
+          <Link href="/" className="text-center text-base text-[#002C5C]">
             سياسة الخصوصية
           </Link>
         </div>
       </div>
       <div className="flex flex-wrap items-center justify-between gap-4">
-        <div className="flex  justify-between gap-4 text-[hsl(28,100%,42%)]">
+        <div className="flex  justify-between gap-4 text-[#006FE6]">
           <Link aria-label="Twitter" href="https://x.com/shadi_m02">
             <Twitter />
           </Link>
@@ -47,16 +41,16 @@ function Footer() {
             <Linkedin />
           </Link>
         </div>
-        <span className="text-[hsl(28,100%,46%)]">
-          صنع بـ🧡 بواسطة{" "}
+        <span className="text-[#006FE6]">
+          صنع بـ💙 بواسطة{" "}
           <Link
-            className="font-semibold text-[hsl(28,100%,43%)]"
+            className="font-semibold text-[#0059B8]"
             href="https://shadialmilhem.com"
           >
             Shadi Al Milhem
           </Link>
         </span>
-        <span className="text-[hsl(28,100%,46%)]">
+        <span className="text-[#002C5C]">
           ©2024 لينفو ليرن. جميع الحقوق محفوظة.
         </span>
       </div>

@@ -9,18 +9,18 @@ html {
   .button-hero {
     background: linear-gradient(
       180deg,
-      #ff9d5d 0%,
-      #ff893e 83.44%,
-      #d76e2a 109.52%
+      #2e89eb 0%,
+      #006fe6 83.44%,
+      #0059b8 109.52%
     );
     transition: all 0.3s ease-in-out;
   }
   .button-hero:hover {
     background: linear-gradient(
       180deg,
-      #ff9d5d 0%,
-      #ff893e 70%,
-      #d76e2a 105.52%
+      #2e89eb 0%,
+      #006fe6 70%,
+      #00438a 105.52%
     );
   }
   .bg-grid {
@@ -38,6 +38,7 @@ html {
   .cta-bg {
     background-image: url("/cta-bg.webp");
     background-size: cover;
+    filter: brightness(110%);
     background-position: top;
   }
 }

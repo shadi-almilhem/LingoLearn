@@ -17,7 +17,7 @@ const Nav = () => {
   return (
     <nav className="fixed z-50  flex h-24 w-full items-center justify-between text-nowrap bg-white px-2 backdrop-blur-sm sm:px-4 md:bg-white/70 md:px-16 lg:px-36">
       {/* Logo place */}
-      <h2 className="text-[27px] font-bold text-[#ff7700] lg:text-[36px] xl:text-[47px]">
+      <h2 className="text-[27px] font-bold text-[#006FE6] lg:text-[36px] xl:text-[47px]">
         لينغو ليرن
       </h2>
 
@@ -27,7 +27,7 @@ const Nav = () => {
           <Link
             href={item.href}
             key={index}
-            className={`${item.className} text-small lg:text-medium  mx-2 text-[#5D2B0B] hover:font-medium hover:text-[#864115] lg:px-4`}
+            className={`${item.className} text-small lg:text-medium  mx-2 text-[#002145] hover:font-medium hover:text-[#00162E] lg:px-4`}
           >
             {item.text}
           </Link>
@@ -38,7 +38,7 @@ const Nav = () => {
       <div className=" hidden  md:flex">
         <Button
           size={"sm"}
-          className="flex items-center  justify-center rounded-md bg-[hsl(28,100%,47%)] hover:bg-[hsl(28,100%,45%)] md:px-4 md:py-2 lg:px-8 lg:py-4"
+          className="flex items-center  justify-center rounded-md bg-[#006FE6] hover:bg-[#0059B8] md:px-4 md:py-2 lg:px-8 lg:py-4"
         >
           سجل الآن مجاناً
         </Button>
@@ -53,7 +53,7 @@ const Nav = () => {
 
       {/* Mobile Nav */}
       {menuOpen && (
-        <div className="absolute left-0 top-24 z-50 flex w-full flex-col items-start gap-2 border-b-2 border-orange-200 bg-white  p-4   shadow-lg  md:hidden">
+        <div className="absolute left-0 top-24 z-50 flex w-full flex-col items-start gap-2 border-b-2 border-blue-200 bg-white  p-4   shadow-lg  md:hidden">
           {navItems.map((item, index) => (
             <Link
               href={item.href}
@@ -64,7 +64,10 @@ const Nav = () => {
               {item.text}
             </Link>
           ))}
-          <Button className="hover mt-4 flex w-full items-center   justify-center rounded-md bg-[hsl(28,100%,47%)] hover:bg-[hsl(28,100%,45%)] md:px-6 md:py-3 lg:px-8 lg:py-4">
+          <Button
+            aria-label="nav button show"
+            className="hover mt-4 flex w-full items-center   justify-center rounded-md bg-[#006FE6] hover:bg-[#0059B8] md:px-6 md:py-3 lg:px-8 lg:py-4"
+          >
             سجل الآن مجاناً
           </Button>
         </div>
