@@ -3,7 +3,6 @@ import ButtonHero from "@/components/ui/ButtonHero";
 import { HeroText } from "@/components/ui/HeroText";
 import Testimonials from "@/components/ui/Testimonials";
 import Image from "next/image";
-import React from "react";
 import HeroImageAndText from "@/components/ui/HeroImageAndText";
 import { motion } from "framer-motion";
 

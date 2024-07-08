@@ -1,5 +1,4 @@
 import ButtonHero from "@/components/ui/ButtonHero";
-import Image from "next/image";
 import React from "react";
 
 function Cta() {

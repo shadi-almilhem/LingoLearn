@@ -1,5 +1,4 @@
 import SectionHeading from "@/components/ui/SectionHeading";
-import React from "react";
 import {
   Accordion,
   AccordionContent,

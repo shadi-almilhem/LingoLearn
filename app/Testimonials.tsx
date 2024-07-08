@@ -1,7 +1,7 @@
 "use client";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Image from "next/image";
-import React, { useRef } from "react";
+import  { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
 const peopleTestimonials = [
@@ -71,7 +71,7 @@ const stagger = {
 function Testimonials() {
   const chunkSize = 3; // Number of testimonials per row
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "0px 0px -300px 0px" });
+  const isInView = useInView(ref, { once: true, margin: "0px 0px -400px 0px" });
   // Split testimonials into chunks
   const testimonialChunks = [];
   for (let i = 0; i < peopleTestimonials.length; i += chunkSize) {
