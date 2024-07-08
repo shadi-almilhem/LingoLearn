@@ -38,7 +38,7 @@ const Nav = () => {
       <div className=" hidden  md:flex">
         <Button
           size={"sm"}
-          className="flex items-center  justify-center rounded-md bg-[#ff7700] hover:bg-[hsl(28,100%,47%)] md:px-4 md:py-2 lg:px-8 lg:py-4"
+          className="flex items-center  justify-center rounded-md bg-[hsl(28,100%,47%)] hover:bg-[hsl(28,100%,45%)] md:px-4 md:py-2 lg:px-8 lg:py-4"
         >
           سجل الآن مجاناً
         </Button>
@@ -64,7 +64,7 @@ const Nav = () => {
               {item.text}
             </Link>
           ))}
-          <Button className="hover mt-4 flex w-full items-center   justify-center rounded-md bg-[#FF8435] hover:bg-[#FF8435] md:px-6 md:py-3 lg:px-8 lg:py-4">
+          <Button className="hover mt-4 flex w-full items-center   justify-center rounded-md bg-[hsl(28,100%,47%)] hover:bg-[hsl(28,100%,45%)] md:px-6 md:py-3 lg:px-8 lg:py-4">
             سجل الآن مجاناً
           </Button>
         </div>

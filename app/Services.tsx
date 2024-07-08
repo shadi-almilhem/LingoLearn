@@ -39,9 +39,9 @@ function Services() {
             <div className="flex h-20 w-20 items-center justify-center rounded-lg bg-[#FFDAC2] p-5 sm:p-3 md:p-4">
               <span>{card.icon}</span>
             </div>
-            <h4 className="text-center text-lg font-semibold text-[#5D2B0B] sm:text-sm md:text-base">
+            <h3 className="text-center text-lg font-semibold text-[#5D2B0B] sm:text-sm md:text-base">
               {`${index + 1}. ${card.label}`}
-            </h4>
+            </h3>
             <p className="text-md max-w-[300px] text-center font-normal text-[#723610] sm:text-xs md:text-sm">
               {card.description}
             </p>

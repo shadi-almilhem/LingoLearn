@@ -15,36 +15,48 @@ function Footer() {
       <div className="flex flex-wrap items-center  justify-between gap-12">
         <Separator className="flex max-w-[1000px] rounded-full bg-[#FFDAC2]" />
         <div className="flex items-center   justify-between gap-8">
-          <Link href="/" className="text-center text-base text-[#FF8435]">
+          <Link
+            href="/"
+            className="text-center text-base text-[hsl(28,100%,45%)]"
+          >
             الشروط و الأحكام
           </Link>
-          <Link href="/" className="text-center text-base text-[#FF8435]">
+          <Link
+            href="/"
+            className="text-center text-base text-[hsl(28,100%,45%)]"
+          >
             سياسة الخصوصية
           </Link>
         </div>
       </div>
       <div className="flex flex-wrap items-center justify-between gap-4">
-        <div className="flex  justify-between gap-4 text-[#FF9D5D]">
-          <Link href="https://x.com/shadi_m02">
+        <div className="flex  justify-between gap-4 text-[hsl(28,100%,42%)]">
+          <Link aria-label="Twitter" href="https://x.com/shadi_m02">
             <Twitter />
           </Link>
-          <Link href="https://www.instagram.com/shadi_m02">
+          <Link
+            aria-label="Instagram"
+            href="https://www.instagram.com/shadi_m02"
+          >
             <Instagram />
           </Link>
-          <Link href="https://www.linkedin.com/in/shadi-al-milhem">
+          <Link
+            aria-label="Linkedin"
+            href="https://www.linkedin.com/in/shadi-al-milhem"
+          >
             <Linkedin />
           </Link>
         </div>
-        <span className="text-[#FF9D5D]">
+        <span className="text-[hsl(28,100%,46%)]">
           صنع بـ🧡 بواسطة{" "}
           <Link
-            className="font-semibold text-[#FF8435]"
+            className="font-semibold text-[hsl(28,100%,43%)]"
             href="https://shadialmilhem.com"
           >
             Shadi Al Milhem
           </Link>
         </span>
-        <span className="text-[#FF9D5D]">
+        <span className="text-[hsl(28,100%,46%)]">
           ©2024 لينفو ليرن. جميع الحقوق محفوظة.
         </span>
       </div>
