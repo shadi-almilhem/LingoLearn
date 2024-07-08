@@ -46,7 +46,10 @@ const Nav = () => {
 
       {/* Mobile Menu Button */}
       <div className="flex md:hidden">
-        <button onClick={() => setMenuOpen(!menuOpen)}>
+        <button
+          aria-label="nav bar button"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
           {menuOpen ? <X /> : <Menu />}
         </button>
       </div>
@@ -65,7 +68,7 @@ const Nav = () => {
             </Link>
           ))}
           <Button
-            aria-label="nav button show"
+            aria-label="سجل الآن مجاناً"
             className="hover mt-4 flex w-full items-center   justify-center rounded-md bg-[#006FE6] hover:bg-[#0059B8] md:px-6 md:py-3 lg:px-8 lg:py-4"
           >
             سجل الآن مجاناً

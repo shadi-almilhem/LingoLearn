@@ -93,6 +93,7 @@ function Testimonials() {
                       alt="person image"
                       height={200}
                       width={200}
+                      loading="lazy"
                       className="  h-14 w-14 rounded-full border-4   border-white object-cover"
                       src={testimonial.image}
                     />
